@@ -1,0 +1,5 @@
+syms s
+b = sym2poly((10)*(s+5) * (s+7))
+a = sym2poly((s) * (s+4) * (s+12) * (s^2 + 2* s+10) * (s^2 +5 * s + 9))
+
+[r,p,k] = residue(b,a)
